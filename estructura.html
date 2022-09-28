@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista_de_tareas</title>
+    <link rel="stylesheet" href="stilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="img/101049271_701196427306611_4553410787696778127_n.jpg" alt="">
+        <h1>Lista de tareas</h1>
+      </header>
+      <form>
+        <input type="text" class="todo-input" />
+        <button class="todo-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select name="todos" class="filter-todo">
+            <option value="all">Todas</option>
+            <option value="completed">Realizadas</option>
+            <option value="uncompleted">Por realizar</option>
+          </select>
+        </div>
+      </form>
+      <div class="todo-container">
+        <ul class="todo-list"></ul>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
